@@ -1,0 +1,362 @@
+
+
+/* fonts family */
+:root {
+  font-family: "roboto", sans-serif;
+  --body-font: "roboto", sans-serif;
+}
+
+/* fonts color */
+:root {
+  --bs-red: #F0756C;
+  --bs-orange: #F9A01F;
+  --bs-yellow: #FFCB39;
+  --bs-green: #F5F8F1;
+  --bs-teal: #EFE8EF;
+  --bs-cyan: #F5F5F5;
+  --bs-black: #111111;
+  --bs-white: #F0FAFC;
+  --bs-gray: #666666;
+  --bs-link-color: #FFFFFF;
+  --bs-success: #FFCB39;
+  --bs-secondary: #F9A11E;
+  --bs-danger: #1A213D;
+  --bs-light: #198F9F;
+  --bs-primary: #1A2C6A;
+  --bs-info: #F0FAFC;
+  --bs-info-rgb: 240, 250, 252;
+  --bs-primary-rgb: 28, 44, 108;
+  --bs-light-rgb: 25, 143, 159;
+  --bs-danger-rgb: 26, 33, 61;
+  --bs-secondary-rgb: 249, 161, 30;
+  --bs-success-rgb: 255, 203, 57;
+  --bs-link-color-rgb: 255, 255, 255;
+  --bs-link-hover-color: #F5E9E9;
+  --bs-link-hover-color-rgb: 245, 233, 233;
+  --bs-body-color: #111111;
+  --bs-border-color: #F0FAFC;
+
+}
+
+body,
+body [data-bs-theme=light] {
+  --bs-blue: #1A2C6A;
+  --bs-red: #F0756C;
+  --bs-orange: #F9A01F;
+  --bs-yellow: #EFEAEA;
+  --bs-green: #F5F8F1;
+  --bs-teal: #EFE8EF;
+  --bs-cyan: #F5F5F5;
+  --bs-black: #111111;
+  --bs-white: #F0FAFC;
+  --bs-gray: #555865;
+  --bs-info: #C3C3C3;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: calc(1rem);
+  color: var(--bs-gray);
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+/* sectiton titles & sub titles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--bs-blue);
+}
+
+h2 {
+  font-weight: 700;
+}
+
+h5 {
+  font-weight: 700;
+}
+
+
+/* general styles */
+.text-primary {
+  color: var(--bs-primary);
+}
+
+.text-secondary {
+  color: var(--bs-secondary);
+}
+
+.text-light {
+  color: var(--bs-light)
+}
+
+.text-info {
+  color: var(--bs-info);
+}
+
+.text-bg-success {
+  color: var(--bs-blue) !important;
+}
+
+/*--------------------------------------------------------------
+/** 2.3 Section
+--------------------------------------------------------------*/
+/* - Section Padding
+--------------------------------------------------------------*/
+.padding-small {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.padding-medium {
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.padding-large {
+  padding-top: 12em;
+  padding-bottom: 12em;
+}
+
+/* - Section Margin
+  --------------------------------------------------------------*/
+.margin-small {
+  margin-top: 8.125em;
+  margin-bottom: 8.125em;
+}
+
+.margin-medium {
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
+.margin-large {
+  margin-top: 12em;
+  margin-bottom: 12em;
+}
+
+/*--------------------------------------------------------------
+/** Buttons
+--------------------------------------------------------------*/
+.btn {
+  --bs-btn-padding-x: 2.5rem;
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-font-size: 1rem;
+  --bs-btn-font-weight: 500;
+  text-transform: uppercase;
+  transition: 0.5s ease-in-out;
+  border-radius: 50px;
+}
+
+.btn-primary {
+  --bs-btn-color: var(--bs-white);
+  --bs-btn-bg: var(--bs-blue);
+  --bs-btn-border-color: var(--bs-blue);
+  --bs-btn-hover-color: var(--bs-black);
+  --bs-btn-hover-bg: var(--bs-orange);
+  --bs-btn-hover-border-color: var(--bs-orange);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: 0;
+  --bs-btn-active-border-color: 0;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: 0;
+  --bs-btn-disabled-border-color: 0;
+}
+
+.btn-secondary {
+  --bs-btn-color: var(--bs-blue);
+  --bs-btn-bg: var(--bs-orange);
+  --bs-btn-border-color: var(--bs-orange);
+  --bs-btn-hover-color: var(--bs-white);
+  --bs-btn-hover-bg: var(--bs-blue);
+  --bs-btn-hover-border-color: var(--bs-blue);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: 0;
+  --bs-btn-active-border-color: 0;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: 0;
+  --bs-btn-disabled-border-color: 0;
+}
+
+/* Pagination
+------------------------------------------------------------- */
+.pagination {
+  --bs-pagination-color: var(--bs-black);
+  --bs-pagination-hover-color: #fff;
+  --bs-pagination-hover-bg: var(--bs-blue);
+  --bs-pagination-hover-border-color: var(--bs-blue);
+  --bs-pagination-focus-color: #fff;
+  --bs-pagination-focus-bg: var(--bs-blue);
+  --bs-pagination-focus-box-shadow: none;
+  --bs-pagination-active-bg: var(--bs-blue);
+  --bs-pagination-active-border-color: var(--bs-blue);
+}
+
+
+/* Accordion
+------------------------------------------------------------- */
+.accordion {
+  --bs-accordion-btn-icon: url('https://api.iconify.design/ion/caret-down.svg?color=%23F2B821&width=30');
+  --bs-accordion-btn-active-icon: url('https://api.iconify.design/ion/caret-down.svg?color=%23F2B821&width=30');
+  --bs-accordion-border-radius: 0px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+
+/* Form
+------------------------------------------------------------- */
+.form-control {
+  border: 1px solid #e4e4e4;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border: 1px solid #acacac;
+  box-shadow: none;
+}
+
+
+/*----------------------------------------------*/
+/* SITE STRUCTURE */
+/*----------------------------------------------*/
+
+/* Header Section
+/*----------------------------------------------*/
+
+.navbar-nav .nav-link {
+  color: var(--bs-primary);
+  font-weight: 600;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.focus {
+  color: var(--accent-color);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--accent-color);
+  outline: none;
+}
+
+#primary-header .dropdown .search::after {
+  content: none;
+}
+
+#primary-header .search-dropdown .dropdown-menu {
+  width: 260px;
+}
+
+#primary-header .search-dropdown .dropdown-menu input {
+  min-width: 100%;
+}
+
+#primary-header .search-dropdown .dropdown-menu button {
+  padding: 0 12px;
+  min-height: -webkit-fill-available;
+  border-radius: 0.25rem;
+}
+
+/* Services Section
+/*----------------------------------------------*/
+.sectiontitle {
+  font-family: var(--body-font);
+  font-size: calc(8rem);
+  font-weight: 100;
+}
+
+/* Work Section
+/*----------------------------------------------*/
+.sectiontext {
+  font-family: var(--body-font);
+  font-size: calc(17rem);
+  font-weight: 900;
+  line-height: 50%;
+  color: var(--bs-cyan);
+}
+
+@media screen and (max-width: 1100px) {
+  .sectiontext {
+    display: none;
+  }
+}
+
+/* Testimonial Section
+/*----------------------------------------------*/
+.swiper-pagination-bullet {
+  background-color: #22222231;
+  opacity: 1;
+  width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 10px));
+  height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 10px));
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--bs-body-color);
+  background: var(--bs-body-color);
+}
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+}
+
+
+
+/*----------------------------------------------*/
+/* PAGES STYLE */
+/*----------------------------------------------*/
+
+
+/* Projects Page
+/*----------------------------------------------*/
+
+button.filter-button {
+  border: 0;
+  background: transparent;
+  text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
+  border-radius: 20px;
+}
+
+button.filter-button.active,
+button.filter-button:hover {
+  color: var(--bs-light);
+  background: var(--primary-color);
+}
+
+
+.project-content .portfolio-img {
+  transition: all 0.5s ease-in-out;
+}
+
+.project-content:hover .portfolio-img {
+  opacity: 0.3;
+}
+
+.portfolio-description {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-content:hover .portfolio-description {
+  opacity: 1;
+}

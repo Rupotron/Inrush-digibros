@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Marketing Packages for Kolkata Startups</title>
+  <style>
+    :root {
+      --primary: #3498db;
+      --secondary: #2ecc71;
+      --tertiary: #9b59b6;
+      --dark: #34495e;
+      --light: #ecf0f1;
+      --accent: #f39c12;
+      --danger: #e74c3c;
+    }
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--tertiary));
+      color: white;
+      padding: 60px 0 80px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    header::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('/api/placeholder/1200/600') center/cover;
+      opacity: 0.2;
+      z-index: 0;
+    }
+    
+    header .container {
+      position: relative;
+      z-index: 1;
+    }
+    
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    
+    .tagline {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .main-content {
+      margin-top: -50px;
+      padding-bottom: 50px;
+    }
+    
+    .package-tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+    }
+    
+    .tab-button {
+      padding: 12px 24px;
+      background-color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin: 0 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    
+    .tab-button:hover {
+      transform: translateY(-3px);
+    }
+    
+    .tab-button.active {
+      background-color: var(--primary);
+      color: white;
+    }
+    
+    .packages-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    
+    .package-card {
+      background-color: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 350px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+    }
+    
+    .package-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    }
+    
+    .package-header {
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .essential-header {
+      background: linear-gradient(135deg, #3498db, #2980b9);
+      color: white;
+    }
+    
+    .growth-header {
+      background: linear-gradient(135deg, #2ecc71, #27ae60);
+      color: white;
+    }
+    
+    .premium-header {
+      background: linear-gradient(135deg, #9b59b6, #8e44ad);
+      color: white;
+    }
+    
+    .package-name {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    
+    .package-price {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+    
+    .package-price span {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+    
+    .package-description {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    
+    .package-features {
+      padding: 30px;
+    }
+    
+    .feature-list {
+      list-style: none;
+    }
+    
+    .feature-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      align-items: center;
+    }
+    
+    .feature-item:last-child {
+      border-bottom: none;
+    }
+    
+    .feature-item::before {
+      content: '✓';
+      margin-right: 10px;
+      color: var(--secondary);
+      font-weight: bold;
+    }
+    
+    .cta-button {
+      display: block;
+      width: 100%;
+      padding: 15px;
+      background-color: var(--dark);
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .cta-button:hover {
+      background-color: var(--primary);
+    }
+    
+    .service-section {
+      padding: 80px 0;
+      background-color: white;
+    }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 2rem;
+      color: var(--dark);
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    
+    .service-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      padding: 30px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    
+    .service-icon {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: var(--primary);
+    }
+    
+    .service-title {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+    
+    .service-description {
+      font-size: 0.9rem;
+      color: #666;
+    }
+    
+    .price-range {
+      font-weight: 600;
+      color: var(--primary);
+      margin-top: 10px;
+    }
+    
+    .accordion {
+      margin-top: 20px;
+    }
+    
+    .accordion-item {
+      margin-bottom: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+      border: 1px solid #ddd;
+    }
+    
+    .accordion-header {
+      background-color: #f1f1f1;
+      padding: 15px 20px;
+      cursor: pointer;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .accordion-header:hover {
+      background-color: #e5e5e5;
+    }
+    
+    .accordion-content {
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    
+    .accordion-content-inner {
+      padding: 20px;
+    }
+    
+    .accordion-item.active .accordion-content {
+      max-height: 500px;
+    }
+    
+    footer {
+      background-color: var(--dark);
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+    }
+    
+    .footer-content {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    .footer-title {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    
+    .footer-text {
+      margin-bottom: 30px;
+    }
+    
+    .contact-button {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    
+    .contact-button:hover {
+      background-color: var(--secondary);
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .packages-container {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .package-card {
+        max-width: 100%;
+      }
+      
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Digital Marketing Packages for Kolkata Startups</h1>
+      <p class="tagline">Affordable, comprehensive digital marketing solutions tailored specifically for Kolkata-based startups in 2025.</p>
+    </div>
+  </header>
+  
+  <div class="main-content">
+    <div class="container">
+      <div class="package-tabs">
+        <button class="tab-button active" onclick="filterPackages('all', event)">All Packages</button>
+        <button class="tab-button" onclick="filterPackages('individual', event)">Individual Services</button>
+        <button class="tab-button" onclick="filterPackages('packages', event)">Packages</button>
+      </div>
+      
+      <div class="packages-container" id="packages-section">
+        <!-- Package 1 -->
+        <div class="package-card" data-type="packages">
+          <div class="package-header essential-header">
+            <h3 class="package-name">Startup Essentials</h3>
+            <div class="package-price">₹25,000<span>/month</span></div>
+            <p class="package-description">Establish your digital presence with essential services</p>
+          </div>
+          <div class="package-features">
+            <ul class="feature-list">
+              <li class="feature-item">Basic SEO (local focus)</li>
+              <li class="feature-item">Social Media Management (2 platforms)</li>
+              <li class="feature-item">Content Calendar</li>
+              <li class="feature-item">Monthly Social Media Plan</li>
+              <li class="feature-item">Google Business Profile Setup & Management</li>
+              <li class="feature-item">4 Static Creatives per month</li>
+              <li class="feature-item">2 Reels/Short Videos per month</li>
+              <li class="feature-item">Monthly Performance Report</li>
+            </ul>
+          </div>
+          <button class="cta-button">Get Started</button>
+        </div>
+        
+        <!-- Package 2 -->
+        <div class="package-card" data-type="packages">
+          <div class="package-header growth-header">
+            <h3 class="package-name">Growth Accelerator</h3>
+            <div class="package-price">₹45,000<span>/month</span></div>
+            <p class="package-description">Expand your reach with comprehensive digital marketing</p>
+          </div>
+          <div class="package-features">
+            <ul class="feature-list">
+              <li class="feature-item">Comprehensive SEO (local + regional)</li>
+              <li class="feature-item">Social Media Management (3 platforms)</li>
+              <li class="feature-item">Content Marketing (4 blog posts/month)</li>
+              <li class="feature-item">Advanced Content Calendar & Strategy</li>
+              <li class="feature-item">Google Business Profile Management</li>
+              <li class="feature-item">8 Static Creatives per month</li>
+              <li class="feature-item">4 Reels/Short Videos per month</li>
+              <li class="feature-item">Basic Influencer Marketing</li>
+              <li class="feature-item">PR Services (local outreach)</li>
+              <li class="feature-item">Bi-weekly Performance Reports</li>
+            </ul>
+          </div>
+          <button class="cta-button">Get Started</button>
+        </div>
+        
+        <!-- Package 3 -->
+        <div class="package-card" data-type="packages">
+          <div class="package-header premium-header">
+            <h3 class="package-name">Premium Dominance</h3>
+            <div class="package-price">₹75,000<span>/month</span></div>
+            <p class="package-description">End-to-end digital marketing solutions for national reach</p>
+          </div>
+          <div class="package-features">
+            <ul class="feature-list">
+              <li class="feature-item">Enterprise SEO (national focus)</li>
+              <li class="feature-item">Premium Social Media (4+ platforms)</li>
+              <li class="feature-item">Advanced Content (8 blog posts/month)</li>
+              <li class="feature-item">Comprehensive Content Strategy</li>
+              <li class="feature-item">Google Business Profile Advanced</li>
+              <li class="feature-item">12 Static Creatives per month</li>
+              <li class="feature-item">8 Reels/Short Videos per month</li>
+              <li class="feature-item">Mid-tier Influencer Marketing</li>
+              <li class="feature-item">PR Services (national outreach)</li>
+              <li class="feature-item">Weekly Performance Reports</li>
+            </ul>
+          </div>
+          <button class="cta-button">Get Started</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <section class="service-section">
+    <div class="container">
+      <h2 class="section-title">Individual Services</h2>
+      
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card" data-type="individual">
+          <div class="service-icon">🔍</div>
+          <h3 class="service-title">Search Engine Optimization</h3>
+          <p class="service-description">Boost your website's visibility in search results</p>
+          <div class="price-range">₹12,000 - ₹35,000/month</div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>View Details</span>
+                <span>+</span>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <p><strong>Basic SEO:</strong> ₹12,000-₹18,000/month</p>
+                  <p><strong>Standard SEO:</strong> ₹18,000-₹25,000/month</p>
+                  <p><strong>Comprehensive SEO:</strong> ₹25,000-₹35,000/month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Service 2 -->
+        <div class="service-card" data-type="individual">
+          <div class="service-icon">📱</div>
+          <h3 class="service-title">Social Media Management</h3>
+          <p class="service-description">Engage with your audience across social platforms</p>
+          <div class="price-range">₹8,000 - ₹35,000/month</div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>View Details</span>
+                <span>+</span>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <p><strong>Basic (1-2 platforms):</strong> ₹8,000-₹12,000/month</p>
+                  <p><strong>Standard (2-3 platforms):</strong> ₹12,000-₹18,000/month</p>
+                  <p><strong>Premium (3-4 platforms):</strong> ₹18,000-₹25,000/month</p>
+                  <p><strong>Enterprise (4+ platforms):</strong> ₹25,000-₹35,000/month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Service 3 -->
+        <div class="service-card" data-type="individual">
+          <div class="service-icon">💻</div>
+          <h3 class="service-title">Web Development</h3>
+          <p class="service-description">Create professional websites for your business</p>
+          <div class="price-range">₹8,000 - ₹80,000+</div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>View Details</span>
+                <span>+</span>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <p><strong>Basic Website:</strong> ₹8,000-₹15,000</p>
+                  <p><strong>Dynamic Website:</strong> ₹15,000-₹35,000</p>
+                  <p><strong>E-commerce Website:</strong> ₹25,000-₹60,000</p>
+                  <p><strong>Custom Web Application:</strong> Starting from ₹80,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Service 4 -->
+        <div class="service-card" data-type="individual">
+          <div class="service-icon">✏️</div>
+          <h3 class="service-title">Content Marketing</h3>
+          <p class="service-description">Engage your audience with valuable content</p>
+          <div class="price-range">₹1,500 - ₹15,000/month</div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>View Details</span>
+                <span>+</span>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <p><strong>Blog Posts:</strong> ₹1,500-₹3,000 per article</p>
+                  <p><strong>Content Calendar:</strong> ₹5,000-₹8,000 per month</p>
+                  <p><strong>Monthly Content Plan:</strong> ₹8,000-₹12,000</p>
+                  <p><strong>Premium Content Creation:</strong> ₹10,000-₹15,000/month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Service 5 -->
+        <div class="service-card" data-type="individual">
+          <div class="service-icon">🗺️</div>
+          <h3 class="service-title">Google Business Profile</h3>
+          <p class="service-description">Optimize your local presence on Google</p>
+          <div class="price-range">₹3,000 - ₹6,000/month</div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>View Details</span>
+                <span>+</span>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <p><strong>Basic Setup:</strong> ₹3,000-₹5,000 (one-time)</p>
+                  <p><strong>Monthly Management:</strong> ₹3,000-₹6,000/month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Service 6 -->
+        <div class="service-card" data-type="individual">
+          <div class="service-icon">👥</div>
+          <h3 class="service-title">Influencer Marketing</h3>
+          <p class="service-description">Leverage influencers to reach your target audience</p>
+          <div class="price-range">₹5,000 - ₹50,000</div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>View Details</span>
+                <span>+</span>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <p><strong>Micro-Influencer Campaign:</strong> ₹5,000-₹15,000</p>
+                  <p><strong>Mid-Tier Influencer Campaign:</strong> ₹15,000-₹30,000</p>
+                  <p><strong>Custom Influencer Strategy:</strong> ₹30,000-₹50,000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Service 7 -->
+        <div class="service-card" data-type="individual">
+          <div class="service-icon">🎨</div>
+          <h3 class="service-title">Creative Services</h3>
+          <p class="service-description">Eye-catching designs for your brand</p>
+          <div class="price-range">₹800 - ₹8,000</div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>View Details</span>
+                <span>+</span>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <p><strong>Logo Design:</strong> ₹2,000-₹6,000</p>
+                  <p><strong>Static Creative Design:</strong> ₹1,500-₹3,000 per design</p>
+                  <p><strong>Reels/Short Video:</strong> ₹3,000-₹8,000 per video</p>
+                  <p><strong>Banner Design:</strong> ₹800-₹2,000 per banner</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Service 8 -->
+        <div class="service-card" data-type="individual">
+          <div class="service-icon">📰</div>
+          <h3 class="service-title">PR Services</h3>
+          <p class="service-description">Build your brand's reputation and visibility</p>
+          <div class="price-range">₹5,000 - ₹20,000/month</div>
+          <div class="accordion">
+            <div class="accordion-item">
+              <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>View Details</span>
+                <span>+</span>
+              </div>
+              <div class="accordion-content">
+                <div class="accordion-content-inner">
+                  <p><strong>Basic PR:</strong> ₹8,000-₹15,000/month</p>
+                  <p><strong>Press Release Creation & Distribution:</strong> ₹5,000-₹10,000 per release</p>
+                  <p><strong>Media Outreach:</strong> ₹10,000-₹20,000/month</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="service-section" style="background-color: #f9f9f9;">
+    <div class="container">
+      <h2 class="section-title">Customization Options</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🛒</div>
+          <h3 class="service-title">E-commerce Implementation</h3>
+          <p class="service-description">Add e-commerce functionality to your website</p>
+          <div class="price-range">₹15,000 - ₹25,000</div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">🎯</div>
+          <h3 class="service-title">PPC Campaign Management</h3>
+          <p class="service-description">Manage your pay-per-click advertising campaigns</p>
+          <div class="price-range">₹10,000/month + ad spend</div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">📧</div>
+          <h3 class="service-title">Email Marketing</h3>
+          <p class="service-description">Connect with your audience through email</p>
+          <div class="price-range">Starting at ₹8,000/month</div>
+        </div>
+        
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <h3 class="service-title">Marketing Automation</h3>
+          <p class="service-description">Automate your marketing processes</p>
+          <div class="price-range">Starting at ₹12,000/month</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <h3 class="footer-title">Ready to Grow Your Kolkata Startup?</h3>
+        <p class="footer-text">Our digital marketing packages are designed to give Kolkata-based startups a competitive edge at prices lower than major metros.</p>
+        <a href="#" class="contact-button">Contact Us Today</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    function toggleAccordion(element) {
+      const accordionItem = element.parentElement;
+      const isActive = accordionItem.classList.contains('active');
+      
+      // Close all accordion items
+      document.querySelectorAll('.accordion-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      
+      // Open the clicked accordion item if it wasn't active
+      if (!isActive) {
+        accordionItem.classList.add('active');
+      }
+    }
+    
+    function filterPackages(type, event) {
+      // Update active button
+      document.querySelectorAll('.tab-button').forEach(button => {
+        button.classList.remove('active');
+      });
+      event.target.classList.add('active');
+      
+      // Filter packages and services based on type
+      const packages = document.querySelectorAll('.package-card');
+      const services = document.querySelectorAll('.service-card');
+      
+      if (type === 'all') {
+        packages.forEach(pkg => pkg.style.display = 'block');
+        services.forEach(svc => svc.style.display = 'block');
+      } else if (type === 'packages') {
+        packages.forEach(pkg => pkg.style.display = 'block');
+        services.forEach(svc => svc.style.display = 'none');
+      } else if (type === 'individual') {
+        packages.forEach(pkg => pkg.style.display = 'none');
+        services.forEach(svc => svc.style.display = 'block');
+      }
+    }
+  </script>
+</body>
+</html>

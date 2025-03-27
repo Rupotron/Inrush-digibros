@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Digital</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="TemplatesJungle">
+    <meta name="keywords" content="html,css,template">
+    <meta name="description" content="Bootstrap 5 Digital Marketing Agency HTML CSS Template">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!--style sheet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <svg style="display: none;">
+        <symbol id="navbar-icon" viewBox="0 0 21 21">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                d="M4.5 6.5h12m-12.002 4h11.997M4.5 14.5h11.995" />
+        </symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" id="search" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0 0 34.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 0 0 327.3 362.6l94.09 94.09a25 25 0 0 0 35.3-35.3M97.92 222.72a124.8 124.8 0 1 1 124.8 124.8a124.95 124.95 0 0 1-124.8-124.8" />
+        </symbol>
+        <symbol id="uil--coffee" viewBox="0 0 24 24">
+            <path fill="#f9a01f"
+                d="M9 17h4a5 5 0 0 0 5-5v-1h1a3 3 0 0 0 0-6h-1V4a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v8a5 5 0 0 0 5 5m9-10h1a1 1 0 0 1 0 2h-1ZM6 5h10v7a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3Zm15 14H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2" />
+        </symbol>
+        <symbol id="uil--clipboard-alt" viewBox="0 0 24 24">
+            <path fill="#f9a01f"
+                d="M15 14H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2m0-4h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2m2-6h-1.18A3 3 0 0 0 13 2h-2a3 3 0 0 0-2.82 2H7a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m-7 1a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm8 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6h1a1 1 0 0 1 1 1Z" />
+        </symbol>
+        <symbol id="uil--comment-alt-chart-lines" viewBox="0 0 24 24">
+            <path fill="#f9a01f"
+                d="M12 8a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1m-4 3a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1m11-9H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11.59l3.7 3.71A1 1 0 0 0 21 22a.84.84 0 0 0 .38-.08A1 1 0 0 0 22 21V5a3 3 0 0 0-3-3m1 16.59l-2.29-2.3A1 1 0 0 0 17 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1ZM16 6a1 1 0 0 0-1 1v6a1 1 0 0 0 2 0V7a1 1 0 0 0-1-1" />
+        </symbol>
+        <symbol id="uil--desktop-alt" viewBox="0 0 24 24">
+            <path fill="#f9a01f"
+                d="M19 2H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h3v2H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2h-3v-2h3a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3m-5 18h-4v-2h4Zm6-5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16Zm0-3H4V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z" />
+        </symbol>
+        <symbol id="behance" viewBox="0 0 512 512">
+            <path fill="white"
+                d="M344.1 233.6c-28.9 0-32.9 28.8-32.9 28.8h61.4s.4-28.8-28.5-28.8m-139.3 28.8h-54.4v50h51.7c7.8-.2 22.4-2.4 22.4-24.3c0-26-19.7-25.7-19.7-25.7" />
+            <path fill="white"
+                d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224s224-100.3 224-224S379.7 32 256 32m47.2 137.6h77.1v23h-77.1zm-39 120.8c0 57-59.4 55.2-59.4 55.2h-97.2v-187h97.2c29.6 0 52.9 16.3 52.9 49.8S229.2 244 229.2 244c37.6 0 35 46.4 35 46.4m144.2-3.1h-96.9c0 34.7 32.9 32.5 32.9 32.5c31.1 0 30-20.1 30-20.1h32.9c0 53.4-64 49.7-64 49.7c-76.7 0-71.8-71.5-71.8-71.5s-.1-71.8 71.8-71.8c75.7.1 65.1 81.2 65.1 81.2" />
+            <path fill="white" d="M218 211.3c0-19.4-13.2-19.4-13.2-19.4h-54.4v41.7h51c8.8 0 16.6-2.9 16.6-22.3" />
+        </symbol>
+        <symbol id="pinterest" viewBox="0 0 512 512">
+            <path fill="white"
+                d="M256.05 32c-123.7 0-224 100.3-224 224c0 91.7 55.2 170.5 134.1 205.2c-.6-15.6-.1-34.4 3.9-51.4c4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58c20.4 0 30.2 15.3 30.2 33.6c0 20.5-13.1 51.1-19.8 79.5c-5.6 23.8 11.9 43.1 35.4 43.1c42.4 0 71-54.5 71-119.1c0-49.1-33.1-85.8-93.2-85.8c-67.9 0-110.3 50.7-110.3 107.3c0 19.5 5.8 33.3 14.8 43.9c4.1 4.9 4.7 6.9 3.2 12.5c-1.1 4.1-3.5 14-4.6 18c-1.5 5.7-6.1 7.7-11.2 5.6c-31.3-12.8-45.9-47-45.9-85.6c0-63.6 53.7-139.9 160.1-139.9c85.5 0 141.8 61.9 141.8 128.3c0 87.9-48.9 153.5-120.9 153.5c-24.2 0-46.9-13.1-54.7-27.9c0 0-13 51.6-15.8 61.6c-4.7 17.3-14 34.5-22.5 48a225.1 225.1 0 0 0 63.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32" />
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 512 512">
+            <path fill="white"
+                d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34zm0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32" />
+            <path fill="white"
+                d="M377.33 162.67a28 28 0 1 1 28-28a27.94 27.94 0 0 1-28 28M256 181.33A74.67 74.67 0 1 1 181.33 256A74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112a112 112 0 0 0-112-112" />
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <path fill="white"
+                d="M496 109.5a201.8 201.8 0 0 1-56.55 15.3a97.5 97.5 0 0 0 43.33-53.6a197.7 197.7 0 0 1-62.56 23.5A99.14 99.14 0 0 0 348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.2 93.2 0 0 0 2.54 22.1a280.7 280.7 0 0 1-203-101.3A95.7 95.7 0 0 0 36 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0 1 35.22 199v1.2c0 47 34 86.1 79 95a100.8 100.8 0 0 1-25.94 3.4a94.4 94.4 0 0 1-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.6 199.6 0 0 1 39.5 405.6a203 203 0 0 1-23.5-1.4A278.7 278.7 0 0 0 166.74 448c181.36 0 280.44-147.7 280.44-275.8c0-4.2-.11-8.4-.31-12.5A198.5 198.5 0 0 0 496 109.5" />
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <path fill="white" fill-rule="evenodd"
+                d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16c24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31" />
+        </symbol>
+        <symbol id="menu" viewBox="0 0 24 24">
+            <path fill="black"
+                d="M4 6a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m0 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1m7-7a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2z" />
+        </symbol>
+        <symbol id="uil--coffee" viewBox="0 0 24 24">
+            <path fill="F9A01F"
+                d="M9 17h4a5 5 0 0 0 5-5v-1h1a3 3 0 0 0 0-6h-1V4a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v8a5 5 0 0 0 5 5m9-10h1a1 1 0 0 1 0 2h-1ZM6 5h10v7a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3Zm15 14H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2" />
+        </symbol>
+        <symbol id="uil--clipboard-alt" viewBox="0 0 24 24">
+            <path fill="F9A01F"
+                d="M15 14H9a1 1 0 0 0 0 2h6a1 1 0 0 0 0-2m0-4h-4a1 1 0 0 0 0 2h4a1 1 0 0 0 0-2m2-6h-1.18A3 3 0 0 0 13 2h-2a3 3 0 0 0-2.82 2H7a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3m-7 1a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v1h-4Zm8 14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1v1a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6h1a1 1 0 0 1 1 1Z" />
+        </symbol>
+        <symbol id="uil--comment-alt-chart-lines" viewBox="0 0 24 24">
+            <path fill="F9A01F"
+                d="M12 8a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0V9a1 1 0 0 0-1-1m-4 3a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1m11-9H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11.59l3.7 3.71A1 1 0 0 0 21 22a.84.84 0 0 0 .38-.08A1 1 0 0 0 22 21V5a3 3 0 0 0-3-3m1 16.59l-2.29-2.3A1 1 0 0 0 17 16H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1ZM16 6a1 1 0 0 0-1 1v6a1 1 0 0 0 2 0V7a1 1 0 0 0-1-1" />
+        </symbol>
+        <symbol id="uil--desktop-alt" viewBox="0 0 24 24">
+            <path fill="F9A01F"
+                d="M19 2H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h3v2H5a1 1 0 0 0 0 2h14a1 1 0 0 0 0-2h-3v-2h3a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3m-5 18h-4v-2h4Zm6-5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16Zm0-3H4V5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1Z" />
+        </symbol>
+        <symbol id="behance" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M344.1 233.6c-28.9 0-32.9 28.8-32.9 28.8h61.4s.4-28.8-28.5-28.8m-139.3 28.8h-54.4v50h51.7c7.8-.2 22.4-2.4 22.4-24.3c0-26-19.7-25.7-19.7-25.7" />
+            <path fill="currentColor"
+                d="M256 32C132.3 32 32 132.3 32 256s100.3 224 224 224s224-100.3 224-224S379.7 32 256 32m47.2 137.6h77.1v23h-77.1zm-39 120.8c0 57-59.4 55.2-59.4 55.2h-97.2v-187h97.2c29.6 0 52.9 16.3 52.9 49.8S229.2 244 229.2 244c37.6 0 35 46.4 35 46.4m144.2-3.1h-96.9c0 34.7 32.9 32.5 32.9 32.5c31.1 0 30-20.1 30-20.1h32.9c0 53.4-64 49.7-64 49.7c-76.7 0-71.8-71.5-71.8-71.5s-.1-71.8 71.8-71.8c75.7.1 65.1 81.2 65.1 81.2" />
+            <path fill="currentColor"
+                d="M218 211.3c0-19.4-13.2-19.4-13.2-19.4h-54.4v41.7h51c8.8 0 16.6-2.9 16.6-22.3" />
+        </symbol>
+        <symbol id="pinterest" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M256.05 32c-123.7 0-224 100.3-224 224c0 91.7 55.2 170.5 134.1 205.2c-.6-15.6-.1-34.4 3.9-51.4c4.3-18.2 28.8-122.1 28.8-122.1s-7.2-14.3-7.2-35.4c0-33.2 19.2-58 43.2-58c20.4 0 30.2 15.3 30.2 33.6c0 20.5-13.1 51.1-19.8 79.5c-5.6 23.8 11.9 43.1 35.4 43.1c42.4 0 71-54.5 71-119.1c0-49.1-33.1-85.8-93.2-85.8c-67.9 0-110.3 50.7-110.3 107.3c0 19.5 5.8 33.3 14.8 43.9c4.1 4.9 4.7 6.9 3.2 12.5c-1.1 4.1-3.5 14-4.6 18c-1.5 5.7-6.1 7.7-11.2 5.6c-31.3-12.8-45.9-47-45.9-85.6c0-63.6 53.7-139.9 160.1-139.9c85.5 0 141.8 61.9 141.8 128.3c0 87.9-48.9 153.5-120.9 153.5c-24.2 0-46.9-13.1-54.7-27.9c0 0-13 51.6-15.8 61.6c-4.7 17.3-14 34.5-22.5 48a225.1 225.1 0 0 0 63.5 9.2c123.7 0 224-100.3 224-224S379.75 32 256.05 32" />
+        </symbol>
+        <symbol id="instagram" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M349.33 69.33a93.62 93.62 0 0 1 93.34 93.34v186.66a93.62 93.62 0 0 1-93.34 93.34H162.67a93.62 93.62 0 0 1-93.34-93.34V162.67a93.62 93.62 0 0 1 93.34-93.34zm0-37.33H162.67C90.8 32 32 90.8 32 162.67v186.66C32 421.2 90.8 480 162.67 480h186.66C421.2 480 480 421.2 480 349.33V162.67C480 90.8 421.2 32 349.33 32" />
+            <path fill="currentColor"
+                d="M377.33 162.67a28 28 0 1 1 28-28a27.94 27.94 0 0 1-28 28M256 181.33A74.67 74.67 0 1 1 181.33 256A74.75 74.75 0 0 1 256 181.33m0-37.33a112 112 0 1 0 112 112a112 112 0 0 0-112-112" />
+        </symbol>
+        <symbol id="twitter" viewBox="0 0 512 512">
+            <path fill="currentColor"
+                d="M496 109.5a201.8 201.8 0 0 1-56.55 15.3a97.5 97.5 0 0 0 43.33-53.6a197.7 197.7 0 0 1-62.56 23.5A99.14 99.14 0 0 0 348.31 64c-54.42 0-98.46 43.4-98.46 96.9a93.2 93.2 0 0 0 2.54 22.1a280.7 280.7 0 0 1-203-101.3A95.7 95.7 0 0 0 36 130.4c0 33.6 17.53 63.3 44 80.7A97.5 97.5 0 0 1 35.22 199v1.2c0 47 34 86.1 79 95a100.8 100.8 0 0 1-25.94 3.4a94.4 94.4 0 0 1-18.51-1.8c12.51 38.5 48.92 66.5 92.05 67.3A199.6 199.6 0 0 1 39.5 405.6a203 203 0 0 1-23.5-1.4A278.7 278.7 0 0 0 166.74 448c181.36 0 280.44-147.7 280.44-275.8c0-4.2-.11-8.4-.31-12.5A198.5 198.5 0 0 0 496 109.5" />
+        </symbol>
+        <symbol id="facebook" viewBox="0 0 512 512">
+            <path fill="currentColor" fill-rule="evenodd"
+                d="M480 257.35c0-123.7-100.3-224-224-224s-224 100.3-224 224c0 111.8 81.9 204.47 189 221.29V322.12h-56.89v-64.77H221V208c0-56.13 33.45-87.16 84.61-87.16c24.51 0 50.15 4.38 50.15 4.38v55.13H327.5c-27.81 0-36.51 17.26-36.51 35v42h62.12l-9.92 64.77H291v156.54c107.1-16.81 189-109.48 189-221.31" />
+        </symbol>
+    </svg>
+
+    <header class="position-absolute w-100 z-3">
+        <nav id="primary-header" class="navbar top-header navbar-expand-lg py-3 px-2">
+            <div class="container-fluid mx-xl-5">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" class="logo img-fluid">
+                </a>
+                <button class="navbar-toggler border-0 d-flex d-lg-none order-3 p-2 shadow-none" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
+                    aria-expanded="false">
+                    <svg class="text-black" width="40" height="40">
+                        <use xlink:href="#navbar-icon"></use>
+                    </svg>
+                </button>
+                <div class="header-bottom offcanvas offcanvas-end" id="bdNavbar"
+                    aria-labelledby="bdNavbarOffcanvasLabel">
+                    <div class="offcanvas-header p-4">
+                        <button type="button" class="btn-close btn-close-black" data-bs-dismiss="offcanvas"
+                            aria-label="Close" data-bs-target="#bdNavbar"></button>
+                    </div>
+                    <div class="offcanvas-body align-items-center justify-content-center">
+                        <ul class="navbar-nav mb-2 mb-lg-0 text-uppercase">
+                            <li class="nav-item px-4">
+                                <a class="nav-link active p-0" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item px-4">
+                                <a class="nav-link p-0" href="about.html">About</a>
+                            </li>
+                            <li class="nav-item px-4">
+                                <a class="nav-link p-0" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item  px-4">
+                                <a class="nav-link p -0" href="services.html" >Services </a>
+                            </li></ul>
+                            <li class="nav-item px-4 search-dropdown dropdown">
+                                <a class="nav-link p-0 search dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                    role="button" aria-expanded="false">
+                                    <svg class="search" width="24" height="24">
+                                        <use xlink:href="#search"></use>
+                                    </svg>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end animate slide mt-3 border-0 p-3 shadow">
+                                    <li class="position-relative d-flex align-items-center p-0">
+                                        <input class="form-control me-2 shadow-none" type="search" placeholder="Search"
+                                            aria-label="Search">
+                                        <button class="btn btn-primary position-absolute end-0" type="submit">
+                                            <svg class="search" width="24" height="24">
+                                                <use xlink:href="#search"></use>
+                                            </svg>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="billboard">
+        <div
+            style="background-image: url(images/background.png);background-repeat: no-repeat; width: 100%; height: 930px;">
+            <div class="container d-flex position-relative">
+                <div class="row flex-row-reverse align-items-center padding-medium mt-md-5">
+                    <div class="col-md-5">
+                        <img src="images/banner-illustration.png" class="img-fluid" alt="banner">
+                    </div>
+                    <div class="col-md-7 mt-4 mt-md-0">
+                        <p class="fs-4 text-capitalize text-primary">
+                            your gateway digital success!
+                        </p>
+                        <h2 class="herotext display-4 fw-bold text-capitalize mb-4">
+                            Ready to take your digital presence to the next level?
+                        </h2>
+                        <p class="fs-5">
+                            Don't miss out on the opportunity to work with a digital marketing agency that's
+                            committed to
+                            your success.
+                        </p>
+                        <div class="d-flex">
+                            <a href="#" class="btn btn-secondary mt-3 text-uppercase me-2">Free trial</a>
+                            <a href="#" class="btn btn-primary mt-3 text-uppercase">Get Started</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="padding-medium">
+        <div class="container">
+            <div class="">
+                <h3 class="fw-bolder text-center mb-5">
+                    Our Services
+                </h3>
+                <div class="row py-3">
+                    <div class="col-md-4 border-dark-subtle border-end px-5">
+                        <h4 class="sectiontitle display-1 text-light">
+                            01
+                        </h4>
+                        <h5>
+                            Digital Marketing
+                        </h5>
+                        <p>
+                            From SEO to PPC, social media marketing to email campaigns, we craft tailored strategies to
+                            boost your on line presence and drive meaningful engagement
+                        </p>
+                    </div>
+                    <div class="col-md-4 border-dark-subtle border-end px-5">
+                        <h4 class="sectiontitle display-1 text-primary">
+                            02
+                        </h4>
+                        <h5>
+                            Content Creation
+                        </h5>
+                        <p>
+                            Our team of skilled writers and creatives will develop captivating content that resonates
+                            with your audience and enhances your brand's story.
+                        </p>
+                    </div>
+                    <div class="col-md-4 border-end px-5">
+                        <h4 class="sectiontitle display-1 text-secondary">
+                            03
+                        </h4>
+                        <h5>
+                            Analytics and Optimization
+                        </h5>
+                        <p>
+                            Our experts will analyze key metrics, identify areas for improvement, and continuously
+                            optimize your campaigns for maximum ROI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feature">
+        <div class="container">
+            <div class="text-center">
+                <h3 class="fw-bolder text-center mb-5"> Why Choose Us?</h3>
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <img src="images/ill-1.png" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+
+                        <div class="text-start text-bg-info border rounded-5 px-4 py-3 m-3">
+                            <h5 class="text-primary">
+                                Proven Track Record
+                            </h5>
+                            <p>
+                                With years of experience and a portfolio of successful projects, we have the
+                                expertise to deliver results-driven solutions.
+                            </p>
+                        </div>
+                        <div class="text-start text-bg-info border rounded-5 px-4 py-3 m-3">
+                            <h5 class="text-secondary">
+                                Client-Centric Approach
+                            </h5>
+                            <p>
+                                Your success is our priority. We take the time to understand your unique goals
+                                and
+                                tailor our strategies to meet your specific needs.
+                            </p>
+                        </div>
+                        <div class="text-start text-bg-info border rounded-5 px-4 py-3 m-3">
+                            <h5 class="text-light">
+                                Transparent Communication
+                            </h5>
+                            <p>
+                                We believe in open and honest communication every step of the way. You'll always
+                                be
+                                kept in the loop, with regular updates and reports on your campaign's progress.
+                            </p>
+                        </div>
+                        <div class="text-start text-bg-info border rounded-5 px-4 py-3 m-3">
+                            <h5 class="text-primary">
+                                Dedicated Support
+                            </h5>
+                            <p>
+                                Our team is here to support you throughout your digital journey. Whether you
+                                have
+                                questions, concerns, or need assistance, we're just a call or email away.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="works" class="padding-medium mt-5">
+        <div class="position-relative z-n1">
+            <div class="position-absolute">
+                <h2 class="sectiontext display-4 text-uppercase">Case Studies</h2>
+            </div>
+        </div>
+        <div class="container text-center">
+            <div>
+                <h3 class="fw-bolder text-center mb-5">
+                    Our Works
+                </h3>
+            </div>
+            <div class="row py-3">
+                <div class="col-md-4 col-lg-2">
+                    <video src="images/product-1.mp4" width="360" height="420" class="dnv-ad" loop autoplay muted playsinline></video>
+                    <a href="#">
+                        <h6 class="py-3">ViralVista</h6>
+                    </a>
+                </div>
+                <div>
+                    --
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <img src="images/product-2.jpg" class="img-fluid">
+                    <a href="#">
+                        <h6 class="py-3">Cognizant Flyer </h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <video src="images/product-3.mp4"  class="flora ad" width="360" height="420" loop autoplay muted playsinline> </video>
+                    <a href="#">
+                        <h6 class="py-3">Butterfly soaps </h6>
+                    </a>
+                </div>
+                <div>
+                    -------------------
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <img src="images/product-4.jpg" class="img-fluid">
+                    <a href="#">
+                        <h6 class="py-3">Avama Jwellry AD poster </h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <img src="images/product-5.jpg" class="img-fluid">
+                    <a href="#">
+                        <h6 class="py-3">Exiting TALES POSTER</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <img src="images/product-6.jpg" class="img-fluid">
+                    <a href="#">
+                        <h6 class="py-3">WE Foundation Ad design</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <img src="images/product-7.jpg" class="img-fluid">
+                    <a href="#">
+                        <h6 class="py-3">collection catalogue design</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <img src="images/product-8.jpg" class="img-fluid">
+                    <a href="#">
+                        <h6 class="py-3">Businesscard design</h6>
+                    </a>
+                </div>
+                <div class="col-md-4 col-lg-2">
+                    <img src="images/product-9.jpg" class="img-fluid">
+                    <a href="#">
+                        <h6 class="py-3">Logo design</h6>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="process" class="padding-medium">
+        <div class="container">
+            <h3 class="fw-bolder text-center mb-5">
+                How we work
+            </h3>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="icon py-3">
+                        <svg class="text-primary uil--coffee" width="50" height="50">
+                            <use xlink:href="#uil--coffee"></use>
+                        </svg>
+                    </div>
+                    <h5>
+                        Initial Consultation
+                    </h5>
+                    <p>
+                        We'll schedule an initial consultation where we'll discuss your objectives, challenges, and
+                        expectations in detail.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon py-3">
+                        <svg class="text-primary uil--clipboard-alt" width="50" height="50">
+                            <use xlink:href="#uil--clipboard-alt"></use>
+                        </svg>
+                    </div>
+                    <h5>
+                        Strategic Planning
+                    </h5>
+                    <p>
+                        This strategy will outline the channels, tactics, and timelines for achieving your goals
+                        effectively.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon py-3">
+                        <svg class="text-primary uil--comment-alt-chart-lines" width="50" height="50">
+                            <use xlink:href="#uil--comment-alt-chart-lines"></use>
+                        </svg>
+                    </div>
+                    <h5>
+                        Implementation
+                    </h5>
+                    <p>
+                        This may involve a combination of activities such as website development or redesign,
+                        content creation, SEO, PPC advertising, and more.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon py-3">
+                        <svg class="text-primary uil--desktop-alt" width="50" height="50">
+                            <use xlink:href="#uil--desktop-alt"></use>
+                        </svg>
+                    </div>
+                    <h5>
+                        Monitoring and Optimization
+                    </h5>
+                    <p>
+                        We'll track website traffic, engagement levels, conversion rates, and other relevant metrics
+                        to ensure that we're on track to meet your goals.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="brand-collection" class="bg-secondary padding-medium ">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col d-flex justify-content-center my-3">
+                    <a href="#">
+                        <img src="images/co-logo-1.png" class="img-fluid brand" alt="brand">
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center my-3">
+                    <a href="#">
+                        <img src="images/co-logo-2.png" class="img-fluid brand" alt="brand">
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center my-3">
+                    <a href="#">
+                        <img src="images/co-logo-3.png" class="img-fluid brand" alt="brand">
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center my-3">
+                    <a href="#">
+                        <img src="images/co-logo-4.png" class="img-fluid brand" alt="brand">
+                    </a>
+                </div>
+                <div class="col d-flex justify-content-center my-3">
+                    <a href="#">
+                        <img src="images/co-logo-5.png" class="img-fluid brand" alt="brand">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-danger">
+        <div class="container text-white padding-medium">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <h3 class="display-1 text-white fw-bold">
+                        Let’s Talk
+                    </h3>
+                </div>
+                <div class="col-md-3 ">
+                    <p>"Grace and confidence define the essence of true progress.
+                        Strength and elegance intertwine, shaping a path of success.
+                        Every step forward is a dance of ambition and finesse.
+                        Poised for greatness, embracing the art of momentum.
+                        Refined vision, unwavering spirit, destined to rise."</p>
+                </div>
+                <div class="offset-md-1 col-md-3">
+                    <div>
+                        <p>
+                            <u>InRush45@gmail.com</u>
+                        </p>
+                        <p>
+                            17 Dasnagar, Jodhpur Park(west), Kolkata, West Bengal 700068
+                        </p>
+                    </div>
+                    <div class="social-links">
+                        <ul class="d-flex gap-3 list-unstyled">
+                            <li>
+                                <a href="#">
+                                    <svg class="behance" width="30" height="30">
+                                        <use xlink:href="#behance" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="pinterest" width="30" height="30">
+                                        <use xlink:href="#pinterest" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="instagram" width="30" height="30">
+                                        <use xlink:href="#instagram" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="twitter" width="30" height="30">
+                                        <use xlink:href="#twitter" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <svg class="facebook" width="30" height="30">
+                                        <use xlink:href="#facebook" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="text-white">
+        <div class="container text-white">
+            <div class="row py-5">
+                <div class="col text-start">
+                    <p>© 2025 Digital. All rights reserved.</p>
+                </div>
+                <div class="col text-end">
+                    Created by  <a href="https://www.linkedin.com/in/rupam-das-1a2213210/" target="_blank"
+                        class="text-decoration-underline fw-bold"> Rupam Das</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/plugins.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> <!--cdn link-->
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        /* Header */
+        .header {
+            background: #1A2C6A;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Blog Container */
+        .blog-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Blog Post */
+        .blog-post {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+
+        .blog-post h2 {
+            color: #1A2C6A;
+        }
+
+        .blog-post p {
+            color: #333;
+        }
+
+        .read-more {
+            text-decoration: none;
+            color: #F0756C;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            background: #1A2C6A;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .blog-container {
+                width: 90%;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="header">
+        <h1>My Blog</h1>
+        <p>Sharing knowledge and insights</p>
+    </div>
+
+    <!-- Blog Container -->
+    <div class="blog-container">
+
+        <!-- Blog Post 1 -->
+        <div class="blog-post">
+            <h2>Getting Started with Web Development</h2>
+            <p>Web development is an exciting field that allows you to create interactive websites and applications...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <!-- Blog Post 2 -->
+        <div class="blog-post">
+            <h2>The Importance of Responsive Design</h2>
+            <p>In today's mobile-first world, ensuring your website is responsive is crucial for user experience...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+        <!-- Blog Post 3 -->
+        <div class="blog-post">
+            <h2>Introduction to JavaScript</h2>
+            <p>JavaScript is the backbone of modern web applications, enabling dynamic behavior on websites...</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 My Blog | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>
